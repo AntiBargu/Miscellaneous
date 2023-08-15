@@ -23,3 +23,10 @@ podman run -d -p ${SERVICE_PORT}:31080 --name socks5_proxy --restart=always ruce
 ![添加防火墙规则](image/添加防火墙规则.svg)
 
 为了安全起见，建议对访问来源做出限制。我们可以访问[ip138](https://ip138.com/)查询本地IP地址。由于ISP动态分配本地IP地址，故可以在来源指定一个包含本地IP地址的子网。
+
+
+
+#### 为浏览器设置SOCKS5代理
+
+我们可以为浏览器设置SOCKS代理，这里推荐一款开源插件[SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega)，它可以安装在基于Chromium或Firefox内核的浏览器上。
+
